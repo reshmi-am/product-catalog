@@ -1,0 +1,14 @@
+DROP table CATEGORY if exists;
+CREATE TABLE CATEGORY(
+	ID INT PRIMARY KEY auto_increment, 
+	NAME VARCHAR(50) not null, 
+	DESCRIPTION VARCHAR(255)
+	);
+	
+DROP table PRODUCTS if exists;
+CREATE TABLE PRODUCTS(
+	ID INT PRIMARY KEY auto_increment, 
+	CATEGORY INT not null, 
+	NAME VARCHAR(50) not null, 
+	DESCRIPTION VARCHAR(255), 
+	PRICE float);

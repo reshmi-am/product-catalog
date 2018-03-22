@@ -1,0 +1,24 @@
+Product catalog manager resful service:
+
+Functions:
+---------
+Search products
+Add product
+Delete product
+
+Api end points:
+
+GET - http://localhost:8080/product/101
+GET - http://localhost:8080/product?category=1&product=shoe
+POST - http://localhost:8080/product/
+{"category": 1, 
+"name": "Swim google",
+"desciption": "blue eyed",
+"price" : 120.00
+}
+DELETE - http://localhost:8080/product/101
+
+Tech stack:
+----------
+Server - Java, Spring boot, Spring Rest, Spring jdbc
+Persistence - H2 IMDB
